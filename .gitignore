@@ -1,0 +1,10 @@
+*.exe
+*.lib
+*.dll
+/Debug/*
+/x64/*
+/GameEngine/x64/**/
+/.vs/*
+*.vcxproj
+*.filters
+*.user
