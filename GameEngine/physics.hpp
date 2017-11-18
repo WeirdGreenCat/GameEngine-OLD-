@@ -4,7 +4,6 @@ class PhisicsMap
 	public:
 	PhisicsMap(string path)
 	{
-		string s;
 		ifstream file(path);
 		
 			for (int x = 0; x < 100; x++)
