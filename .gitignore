@@ -1,0 +1,8 @@
+*.exe
+*.lib
+*.dll
+*.sln
+/Debug/*
+/x64/*
+/GameEngine/x64/**/
+/.vs/*
