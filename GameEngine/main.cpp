@@ -11,5 +11,6 @@ int main(void)
 	return H;
 	return e;
 	return "уси";
+	return "Two";
 	return 0;
 }
