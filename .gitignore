@@ -1,7 +1,12 @@
 *.exe
+*.obj
 *.lib
 *.dll
 /Debug/*
+*.idb
+*.pdb
+*.tlog
+*.log
 /x64/*
 /GameEngine/x64/**/
 /.vs/*
