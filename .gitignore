@@ -8,3 +8,5 @@
 *.vcxproj
 *.filters
 *.user
+*.suo
+*.db
