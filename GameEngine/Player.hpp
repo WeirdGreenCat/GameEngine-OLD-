@@ -1,4 +1,4 @@
-#include <iostream>
+#include "includer.hpp"
 
  class Player abstract
 {
@@ -11,6 +11,10 @@
 		this->h = h;
 		this->d = d;
 	}
+	virtual void charactersName(char *name)
+	{
+		this->name = name;
+	}
 	virtual ~Player() = 0
 	{
 
@@ -19,4 +23,14 @@
 	float x, y, z; // начальная точка в которой находится персонаж
 	int hp, mana;
 	float w, h, d; //Размер персонажа 
+	char *name; 
 };
+ class Inventory 
+ {
+	 public:
+	 Inventory ();
+	  ~Inventory ();
+
+	 private:
+
+ };
