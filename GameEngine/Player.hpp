@@ -24,6 +24,7 @@
 	int hp, mana;
 	float w, h, d; //Размер персонажа 
 	char *name; 
+	bool onGround = false; 
 };
  class Inventory 
  {

@@ -1,21 +1,32 @@
 #include "includer.hpp"
 class PhisicsMap
 {
-
 	public:
-	PhisicsMap()
+	PhisicsMap(string path)
 	{
-	
-	
+		string s;
+		ifstream file(path);
+		
+			for (int x = 0; x < 100; x++)
+			{
+				for (int y = 0; y < 100; y++)
+				{
+					for (int z = 0; z < 100; z++)
+					{
+						mass[x][y][z] = file.get();
+					}
+				}
+			}
+			file.close();
 	};
-
+	
 	~PhisicsMap()
 	{
 		delete[] mass;
 	}
 	private:
-
-	bool mass[1000][1000][1000];
+	
+	byte mass[100][100][100];
 
 };
 
