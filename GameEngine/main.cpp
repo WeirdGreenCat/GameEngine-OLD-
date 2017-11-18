@@ -2,6 +2,7 @@
 #include <SFML/OpenGL.hpp>
 #include <iostream>
 #include "config.hpp"
+
 using namespace sf;
 
 int main(void) 
