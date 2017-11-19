@@ -6,11 +6,11 @@ class PhisicsMap
 	{
 		ifstream file(path);
 		
-			for (int x = 0; x < 100; x++)
+			for (int x = 0; x < 256; x++)
 			{
-				for (int y = 0; y < 100; y++)
+				for (int y = 0; y < 50; y++)
 				{
-					for (int z = 0; z < 100; z++)
+					for (int z = 0; z < 256; z++)
 					{
 						mass[x][y][z] = file.get();
 					}
@@ -25,7 +25,7 @@ class PhisicsMap
 	}
 	private:
 	
-	byte mass[100][100][100];
+	byte mass[256][50][256];
 
 };
 
