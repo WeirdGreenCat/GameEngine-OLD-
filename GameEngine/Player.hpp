@@ -3,7 +3,7 @@
  class Player abstract
 {
 	public:
-	Player(float x,float y, float z,int hp) : x(x),y(y),z(z),hp(hp) {};
+	Player(float x,float y, float z) : x(x),y(y),z(z) {};
 
 	void characterSize(float w, float h, float d)
 	{
@@ -17,18 +17,32 @@
 	}
 	void collision(float dx, float dy,float dz)
 	{
+		
+	}
+	void control()
+	{
 
 	}
+	void update()
+	{
+		if (onGround)
+		{
+
+		}
+	}
+
 	virtual ~Player() = 0
 	{
 
-	};
+	}
 	private:
-	Inventory *inventory = new Inventory();
-	float x, y, z; // начальная точка в которой находится персонаж
-	float dx, dy, dz; // Перемещение персонажа
+	//Inventory *inventory = new Inventory; // тут ошибка я хз че 
+	double x, y, z; // положение персонажа
+	double dx=0.0, dy=0.0, dz=0.0; // смещение персонажа
+	float w, h, d; //Размер персонажа  ; width, height, depth 
+	float speed;
 	int hp, mana;
-	float w, h, d; //Размер персонажа 
+	
 	char *name; 
 	bool onGround = false; 
 	bool onStairs = false;
@@ -39,9 +53,14 @@
  class Inventory 
  {
 	 public:
-	 Inventory ();
-	  ~Inventory ();
+	 Inventory()
+	 {
+	 }
+	 ~Inventory()
+	 {
+	 }
 
 	 private:
+	
 
  };

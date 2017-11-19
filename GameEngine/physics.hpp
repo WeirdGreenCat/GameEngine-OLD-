@@ -16,12 +16,12 @@ class PhisicsMap
 					}
 				}
 			}
-			file.close();
-	};
+		file.close();
+	}
 	
 	~PhisicsMap()
 	{
-		delete[] mass;
+		//delete[] mass;
 	}
 	private:
 	
