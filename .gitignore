@@ -10,9 +10,6 @@
 /x64/*
 /GameEngine/x64/**/
 /.vs/*
-*.vcxproj
-*.filters
-*.user
 *.suo
 *.db
 *.sln
